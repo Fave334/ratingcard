@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* font-family: 'Overpass', sans-serif; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
+}
+.rating-card {
+    background: hsl(213, 19%, 18%);
+    width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.rating-card h1 {
+    color: #fff;
+}
+.main-txt {
+    font-size: 15px;
+    line-height: 30px;
+    color: hsl(216, 12%, 54%);
+    padding: 1rem 0;
+    text-align: justify;
+}
+.img-container {
+    padding: 1.1rem 1.2rem;
+    border-radius: 50%;
+    background: hsl(214, 20%, 33%);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 2rem 0;
+}
+.btn-cont {
+    padding: 1rem 1.3rem;
+    border-radius: 50%;
+    background: hsl(214, 20%, 33%);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 2rem 0;
+    color: hsl(216, 12%, 54%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn-cont:hover {
+    background: hwb(214 32% 53%);
+}
+.spec {
+    padding: 1rem 1.5rem;
+}
+.rating-btns {
+    display: flex;
+    justify-content: space-between;
+}
+.rating-sub button, .rating-subs button {
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    color: #fff;
+    background: rgb(255, 174, 24);
+    border-radius: 10rem;
+    transition: 0.5s ease-in-out;
+    border: none;
+    outline: none;
+}
+.rating-sub button:hover, .rating-subs button {
+    background: rgb(255, 166, 0);
+}
+.align {
+    text-align: center;
+}
+.align .main-txt {
+    text-align: center !important;
+}
+@media screen and (max-width : 400px) {
+    .rating-card {
+        padding: 1rem;
+        width: 300px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .rating-card h1 {
+        font-size: 25px;
+    }
+    .btn-cont {
+        padding: 0.5rem 0.8rem;
+    }
+    .spec {
+        padding: 0.5rem 1rem;
+    }
+    .rating-sub button {
+        height: 40px;
+    }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+}
+.selection {
+    background: hsl(214, 20%, 33%);
+    color: rgb(20, 124, 20);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    border-radius: 6rem;
+}
+.container {
+    padding-bottom: 20px;
+}
+.align h1 {
+    padding-top: 20px;
+}
+.align {
+    display: none;
+}
